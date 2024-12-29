@@ -1,0 +1,144 @@
+.Body{
+  background: url("https://img.freepik.com/free-photo/homemade-pizza-wooden-cutting-board-pepper-ketchup-right-side-isolated-dark-surface_179666-42243.jpg?t=st=1735130792~exp=1735134392~hmac=ae3fe4f87b69988c1d2f9bbba6ce8832d52a9147c892dd7530963d0b3b8a14a6&w=1800");
+  height: 600px;    
+  width:100%;
+ /* background-size: contain; */
+ background-size: 100% 100%;
+}
+.Header{
+  height:80px;
+  display: flex;
+  justify-content: space-between;
+  margin-right:200px;
+  margin-left:100px;
+
+}
+.logo{
+  height:80px;
+  display: flex;
+  justify-content: space-between;
+  margin-right:200px;
+  margin-left:100px;
+
+}
+.logo:hover {  
+  cursor: pointer;   
+}
+
+.signin{
+  margin-top:30px;
+  margin-right: 10px;
+  color: black;
+  font-size:18px;
+}
+.address{
+  margin-top:30px;
+ 
+  color: black;
+  font-size:18px;
+}
+
+.signin:hover {
+  cursor: pointer;
+ 
+  
+}
+.belowbody{
+  display:flex;
+  justify-content: center;
+}
+.imagediv{
+  height:50px;
+  margin:5px;
+ 
+  
+}
+.deals-button{
+
+}
+.footer{
+  display:flex;
+  justify-content: center;
+  margin-top:320px;
+  margin-bottom:50px;
+}
+
+.location{
+  
+  position: sticky;
+  top: 200px;
+  left: 1000px;
+  color:black;
+  height: 200px;
+  width: 400px;
+  background-color: white;
+  box-shadow: 10px 10px 10px rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  z-index: 10;
+  padding: 10px;
+  
+  
+}
+.button:hover{
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;  /* Removes underline */
+   color:Inherit;    /* Inherit color from parent or set to any color */
+}
+a:hover{
+  cursor: pointer;
+  text-decoration: underline;
+  
+
+}
+.signindiv{
+position: relative;
+  top:100px;
+  width: 600px;
+  height: 300px;
+  border: 1px solid #D3D3D3;
+  margin-left:400px;
+  border-radius: 5px;
+  padding: 10px;
+
+}
+.pizza{
+  border: 1px solid #E0E0E0;
+  width: 150px;
+  font-size: 20px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+.pizza:active {
+  background-color: red;
+  transform: scale(0.98);
+  color: white;
+}
+.pizza:hover{
+  cursor: pointer;
+}
+.pizzbox{
+  border: 1px solid #E0E0E0;
+  width : 250px;
+  height: 400px;
+  margin: 5px;
+}
+.pizzaboxbut{
+  background-color: green;
+  border: none;
+  color: white;
+  width: 200px;
+  height: 30px;
+  margin-left: 5px;
+  font-size: 15px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.pizzaboxbut:hover{
+  cursor: pointer;
+}
+
+
