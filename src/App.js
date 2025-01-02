@@ -7,12 +7,13 @@ import './App.css';
 import Header from './Header';
 import Body from './Body';
 import { LocationProvider } from './locationProvider';
+
 function App() {
   return (
 
    <div>
      <LocationProvider>
-      <Header/>     
+      <Header/> 
       <Outlet> 
       <Body/>
       </Outlet>    

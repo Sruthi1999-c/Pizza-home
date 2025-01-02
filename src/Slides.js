@@ -1,31 +1,14 @@
-import { useEffect, useState } from "react";
+import useAPI from "./useAPI";
 const Slides = ()=>{
-
-    const [data, setData] = useState([]);
-
-    useEffect(()=>{
-
-        const fetchdata = async()=>{
-            const Response = await fetch("https://api.pizzahut.io/v2/products/sides?hutid=21L&sector=in-1&delivery=true&filter={%22subtype%22:%22side%22}")
-            const data = await Response.json();
-            setData(data);
-        }
-        fetchdata ();
-
-    },[])
-
-    
-
-    let newslideaarr = [];
+const {data} = useAPI("https://api.pizzahut.io/v2/products/pizzas?hutid=21L&sector=in-1&delivery=true")
+let newslideaarr = [];
 data.forEach((item)=>{
    if(item?.new === true){
     newslideaarr.push(item);
    }
 })
-
-    return(
-        <div style = {{display:"flex", flexWrap : "wrap"}}>
-
+ return(
+    <div style = {{display:"flex", flexWrap : "wrap"}}>
 
     {newslideaarr.map((item)=>{
 
