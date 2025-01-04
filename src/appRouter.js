@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router-dom"
+import { BrowserRouter } from "react-router-dom"
 import App from "./App"
 import Signin from "./signin"
 import Body from "./Body"
@@ -7,7 +7,7 @@ import Slides from "./Slides"
 import Cart from "./Cart"
 
 
-const AppRouter = createBrowserRouter([
+const AppRouter = BrowserRouter([
 
     {
       path:"/",
