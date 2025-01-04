@@ -1,7 +1,17 @@
-
+import { useDispatch } from "react-redux";
+import { addCard } from "./cardSlice";
 const Iteminfo = ({item, closemodel})=>{
+
+
+
+  const dispatch = useDispatch();
+  const handlecart = (item)=>{
+      dispatch(addCard(item));
+     
+  }
     
     return(
+
 
         <div className="modal-overlay">
         <div className="modal-content" onClick={(e) => e.stopPropagation()}>
@@ -9,7 +19,7 @@ const Iteminfo = ({item, closemodel})=>{
         <button className="close-btn" onClick={closemodel}>X</button>
           <h2>{item.id}</h2>
           <p>{ "Price: " + item.price}</p>
-          <button className = "pizzaboxbut"> Add </button>
+          <button className = "pizzaboxbut" onClick = { ()=>{handlecart(item)}}> Add </button>
         </div>
       </div>
 

@@ -1,7 +1,8 @@
 
 import React from 'react';
 import { Outlet } from 'react-router-dom';
-
+import { Provider } from 'react-redux';
+import Store from './Store';
 
 import './App.css';
 import Header from './Header';
@@ -12,12 +13,14 @@ function App() {
   return (
 
    <div>
+    <Provider  store = {Store}>
      <LocationProvider>
       <Header/> 
       <Outlet> 
       <Body/>
       </Outlet>    
       </LocationProvider>
+      </Provider>
       
       </div>
   );

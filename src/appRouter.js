@@ -4,6 +4,7 @@ import Signin from "./signin"
 import Body from "./Body"
 import Pizza from "./Pizza"
 import Slides from "./Slides"
+import Cart from "./Cart"
 
 
 const AppRouter = createBrowserRouter([
@@ -29,6 +30,11 @@ const AppRouter = createBrowserRouter([
         {
           path:"/order/slides",
           element: <Slides/>
+          
+        },
+        {
+          path:"/order/cart",
+          element: <Cart/>
           
         }
       ]     
